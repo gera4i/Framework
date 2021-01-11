@@ -22,7 +22,7 @@ public class WebDriverShopTest extends CommonConditions {
             Product testProduct = ProductCreator.withFailedSearchAndFailedCoupon();
             ResultsPage checkResult = new HomePage(driver)
                     .openPage()
-                    .searchForSneakersArticle(testProduct.getFailedArticle());
+                    .searchForProductArticle(testProduct.getFailedArticle());
 
             assertThat(checkResult.getCheckResultSeacrh().contains(testProduct.getFailedArticle())).isTrue();
 
@@ -33,7 +33,7 @@ public class WebDriverShopTest extends CommonConditions {
         Product testProduct = ProductCreator.withAllProperty();
         ResultsPage checkResult = new HomePage(driver)
                 .openPage()
-                .searchForSneakersArticle(testProduct.getArticle());
+                .searchForProductArticle(testProduct.getArticle());
 
         assertThat(checkResult.selectProductLink()).isTrue();
 
