@@ -48,7 +48,7 @@ public class WebDriverShopTest extends CommonConditions {
                     .addToCart()
                     .openCart();
 
-            assertThat(cartPage.getSneakersArticle(),is(equalTo(testProduct.getArticle())));
+            assertThat(cartPage.getProductArticle(),is(equalTo(testProduct.getArticle())));
             assertThat(cartPage.actualSizeSelected(),is(equalTo(testProduct.getSize())));
             assertThat(cartPage.getCartOrderTotal(),is(equalTo(Double.parseDouble(testProduct.getPrice()))));
 
@@ -68,8 +68,8 @@ public class WebDriverShopTest extends CommonConditions {
 
         assertThat(cartPage.actualSizeSelected(),is(equalTo(testProduct.getSize())));
         assertThat(cartPage.actualSizeSecondSelected(),is(equalTo(testProduct.getSize())));
-        assertThat(cartPage.getSneakersArticle(),is(equalTo(testProduct.getArticle())));
-        assertThat(cartPage.getSneakersSecondArticle(),is(equalTo(testProduct.getSecondArticle())));
+        assertThat(cartPage.getProductArticle(),is(equalTo(testProduct.getArticle())));
+        assertThat(cartPage.getProductSecondArticle(),is(equalTo(testProduct.getSecondArticle())));
         assertThat(cartPage.getCartOrderTotal(),is(equalTo(Double.parseDouble(testProduct.getSumPrice()))));
 
 
@@ -86,7 +86,7 @@ public class WebDriverShopTest extends CommonConditions {
                 .addToCart()
                 .openCart();
 
-        assertThat(cartPage.getSneakersArticle(),is(equalTo(testProduct.getArticle())));
+        assertThat(cartPage.getProductArticle(),is(equalTo(testProduct.getArticle())));
         assertThat(cartPage.actualSizeSelected(),is(equalTo(testProduct.getSize())));
         assertThat(cartPage.getCartOrderTotal(),is(equalTo(Double.parseDouble(testProduct.getPrice()))));
 
@@ -106,7 +106,7 @@ public class WebDriverShopTest extends CommonConditions {
                 .addToCart()
                 .openCart();
 
-        assertThat(cartPage.getSneakersArticle(),is(equalTo(testProduct.getArticle())));
+        assertThat(cartPage.getProductArticle(),is(equalTo(testProduct.getArticle())));
         assertThat(cartPage.actualSizeSelected(),is(equalTo(testProduct.getSize())));
         assertThat(cartPage.getCartOrderTotal(),is(equalTo(Double.parseDouble(testProduct.getPrice()))));
 
@@ -127,7 +127,7 @@ public class WebDriverShopTest extends CommonConditions {
                 .addToCart()
                 .openCart();
 
-        assertThat(cartPage.getSneakersArticle(),is(equalTo(testProduct.getArticle())));
+        assertThat(cartPage.getProductArticle(),is(equalTo(testProduct.getArticle())));
         assertThat(cartPage.actualSizeSelected(),is(equalTo(testProduct.getSize())));
         assertThat(cartPage.getCartOrderTotal(),is(equalTo(Double.parseDouble(testProduct.getPrice()))));
 
