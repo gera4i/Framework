@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke" verbose="1" >
+    <test name="test.WebDriverShopTest"   >
+        <classes>
+            <class name="test.WebDriverShopTest" />
+        </classes>
+    </test>
+    <test name="test.LoginTest"   >
+        <classes>
+            <class name="test.LoginTest" />
+        </classes>
+    </test>
+</suite>
